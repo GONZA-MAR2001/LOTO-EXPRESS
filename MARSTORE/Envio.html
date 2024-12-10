@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="IMG/pagina/vectorloto.png" type="image/x-icon">
+    <link rel="stylesheet" href="BOOTSTRAP/css/bootstrap.min.css">
+    <link rel="stylesheet" href="ESTILOS/styleenvio.css">
+    <link rel="stylesheet" href="ESTILOS/styletodo.css">
+    
+    <title>Envio LotoExpress</title>
+    </head>
+
+
+
+<body>
+   <!-- Crear el enlace de boostrap instalado -->
+   <script src="BOOTSTRAP/js/bootstrap.min.js"></script>
+  
+   <header>
+    <div class="logo">
+        <img src="IMG/pagina/vectorloto.png" alt="logo empresa">
+        <h2 class="nombreEmpresa">LotoExpress</h2>
+    </div>
+     <!-- Encabezado con buscador --
+     <div class="buscador">
+        <form action="#" method="GET">
+            <input type="text" placeholder="Buscar..." name="query">
+            <input type="submit" value="Buscar">
+        </form>
+    </div>-->
+ </header>
+   <!--Barra de Navegación-->
+<header class="barra">  
+ <nav>
+    <a href="LotoExpress.html">Sobre LotoExpress</a>
+    <a href="Envio.html">Envio</a>
+    <a href="Tienda.html">Tienda</a>
+    <a href="Carrito.html">Carrito</a>
+ </nav>   
+</header>
+
+
+
+        <div class="container">
+            <h1>Página de Envio LotoExpress</h1>
+            <form action="/procesar-pago" method="POST">
+                <!-- Información personal -->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+    
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+    
+                <label for="numero">Teléfono:</label>
+                <input type="numero" id="numero" name="numero" placeholder="Ingresa tu número" required>
+
+                <label for="Dirección">Dirección:</label>
+                <input type="text" id="Dirección" name="Dirección" placeholder="Ingresa tu dirección y Barrio" required>
+
+                <!--seleccion multiple-->
+              
+
+                <!-- Información de pago -->
+                <label for="numero-tarjeta">Número de tarjeta:</label>
+                <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="1234 5678 9012 3456" required>
+    
+                <label for="fecha-expiracion">Fecha de expiración:</label>
+                <input type="text" id="fecha-expiracion" name="fecha-expiracion" placeholder="MM/AA" required>
+    
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+    
+                <label for="monto">Monto a pagar:</label>
+                <input type="text" id="monto" name="monto" placeholder="Monto total" required>
+    
+                <!-- Botones de acción -->
+                <div class="button-container">
+                    <button type="submit" class="pay-button">Pagar ahora</button>
+                    <button type="button" class="cancel-button" onclick="window.location.href='/'">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

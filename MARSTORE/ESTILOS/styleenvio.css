@@ -1,0 +1,62 @@
+html body{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+
+}
+.container {
+    max-width: 600px;
+    margin: 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+input, select {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+
+}
+.pay-button {
+    background-color: #0cec40;
+}
+.cancel-button {
+    background-color: #ff0d25;
+}
+.pay-button:hover {
+    background-color: #11f141;
+}
+.cancel-button:hover {
+    background-color: #fd031c;
+}

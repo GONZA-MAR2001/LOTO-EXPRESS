@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda</title>
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <a href="/add">Agregar Producto</a>
+    <div>
+        {% for product in products %}
+        <div style="border: 1px solid; margin: 10px;">
+            <h2>{{ product.name }}</h2>
+            <p>Precio: {{ product.price }}</p>
+            <p>{{ product.description }}</p>
+            <img src="{{ url_for('static', filename='uploads/' + product.image) }}" alt="{{ product.name }}" style="width: 100px;">
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
+
+<!--formulario-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agregar Producto</title>
+</head>
+<body>
+    <h1>Agregar Producto</h1>
+    <form action="/add" method="post" enctype="multipart/form-data">
+        <label for="name">Nombre del Producto:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="price">Precio:</label>
+        <input type="number" id="price" name="price" required><br><br>
+        
+        <label for="description">Descripción:</label>
+        <textarea id="description" name="description"></textarea><br><br>
+        
+        <label for="image">Imagen:</label>
+        <input type="file" id="image" name="image" required><br><br>
+        
+        <button type="submit">Agregar Producto</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,108 @@
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+  }
+
+  h1, h2, p {
+    margin: 0;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Encabezado */
+  header {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  /* Botón de llamada a la acción */
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* Sección de características */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #222;
+    text-align: center;
+  }
+
+  .feature {
+    width: 25%;
+  }
+
+  .feature img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  /* Sección de contenido principal */
+  .content-section {
+    padding: 40px 20px;
+  }
+
+  .content-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #dd1b1b;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .content-box:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .content-box img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+  }
+
+  .content-box .text {
+    padding: 0 20px;
+  }
+
+  .content-box h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  .content-box p {
+    font-size: 1rem;
+    color: #ccc;
+  }
